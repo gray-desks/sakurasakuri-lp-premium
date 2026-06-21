@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>さくらさくり｜人生に、満開を。— グルテンフリー抹茶ゴーフレット</title>
+<meta name="description" content="岐阜県産米粉100％のグルテンフリー抹茶ゴーフレット「さくらさくり」。名前やメッセージを刻める個包装で、感謝とエールを桜の形に。3.4万人と一緒に作った贈り菓子。">
+<meta property="og:title" content="さくらさくり｜人生に、満開を。">
+<meta property="og:description" content="感謝とエールを、桜の形に。グルテンフリー抹茶ゴーフレット。">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+</script>
+</head>
+<body>
+
+<!-- 3D 桜吹雪キャンバス -->
+<canvas id="scene"></canvas>
+
+<!-- ヘッダー -->
+<header class="site-head" id="head">
+  <div class="brand">さくらさくり<small>SAKURA SAKURI</small></div>
+  <a class="btn" href="https://yiemshop.com/collections/sakurasakuri" target="_blank" rel="noopener">ギフトを選ぶ</a>
+</header>
+
+<!-- ヒーロー -->
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__seal">満開<br>祈願</div>
+    <p class="hero__latin">Bloom your life</p>
+    <h1 class="hero__title">人生に、<br><span class="accent">満開</span>を。</h1>
+    <p class="hero__sub">頑張る人へ、お世話になった人へ。<br>感謝とエールを、桜の形にして届ける贈り菓子。</p>
+    <div class="hero__float">
+      <img src="assets/img/single.png" alt="さくらさくり 抹茶ゴーフレット" loading="eager">
+    </div>
+    <div class="hero__cta">
+      <a class="btn" href="#products">商品を見る<span class="arr">→</span></a>
+      <a class="btn btn--ghost" href="#story">ブランドの物語</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>SCROLL</span><span class="bar"></span></div>
+</section>
+
+<!-- 流れる帯 -->
+<div class="marquee">
+  <div class="marquee__track">
+    <span>グルテンフリー</span><span>岐阜県産 米粉100%</span><span>メッセージ個包装</span><span>TV・メディア掲載</span><span>SNS 3.4万人と共創</span>
+    <span>グルテンフリー</span><span>岐阜県産 米粉100%</span><span>メッセージ個包装</span><span>TV・メディア掲載</span><span>SNS 3.4万人と共創</span>
+  </div>
+</div>
+
+<!-- 三つの理由 -->
+<section class="section" id="reasons">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Why chosen</p>
+      <h2 class="section__title">選ばれる、<span class="kanji-no">3</span>つの理由。</h2>
+      <p class="section__lead">素材も、想いも、確かな実績も。<br>贈る人の品格まで届ける一箱です。</p>
+    </div>
+    <div class="reasons">
+      <article class="reason reveal d1">
+        <span class="reason__no">01</span>
+        <div class="reason__icon">🌾</div>
+        <h3>グルテンフリー</h3>
+        <p>岐阜県産の米粉を100%使用。小麦を控える方や、お子さま、ご年配の方にも安心して贈れます。卵殻カルシウムも配合。</p>
+        <span class="tag">米粉100% / 小麦不使用</span>
+      </article>
+      <article class="reason reveal d2">
+        <span class="reason__no">02</span>
+        <div class="reason__icon">✉️</div>
+        <h3>メッセージ個包装</h3>
+        <p>お名前や感謝のひと言を、一枚ずつ個包装に印字。大量注文・法人ギフトにも対応し、想いを言葉で添えられます。</p>
+        <span class="tag">名入れ / 法人対応</span>
+      </article>
+      <article class="reason reveal d3">
+        <span class="reason__no">03</span>
+        <div class="reason__icon">📺</div>
+        <h3>TV・メディア掲載</h3>
+        <p>テレビをはじめ各メディアで紹介された信頼の実績。SNSフォロワー3.4万人と共に磨き上げた、選ばれ続ける味です。</p>
+        <span class="tag">メディア多数 / 賞味期限1年</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 商品 -->
+<section class="section" id="products">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Lineup</p>
+      <h2 class="section__title">贈るシーンで選ぶ、<br>三つのかたち。</h2>
+      <p class="section__lead">気軽なお礼から、特別な大切な人へ。<br>シーンに寄り添う3つのギフト。</p>
+    </div>
+    <div class="products">
+
+      <article class="product reveal d1">
+        <div class="product__media">
+          <span class="product__rank">Product 01</span>
+          <img src="assets/img/petit.png" alt="プチ箱 さくらさくり">
+        </div>
+        <div class="product__body">
+          <h3 class="product__name">プチ箱</h3>
+          <p class="product__catch">気軽に渡せる、最初の一箱。</p>
+          <ul class="product__meta">
+            <li>2枚入り</li><li>直径 約6.5cm</li><li>賞味期限 1年</li>
+          </ul>
+          <div class="product__foot">
+            <div class="product__price">¥2,280 <small>税込</small></div>
+            <a class="btn" href="https://yiemshop.com/collections/sakurasakuri" target="_blank" rel="noopener">見る</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal d2">
+        <div class="product__media">
+          <span class="product__rank">Product 02</span>
+          <img src="assets/img/maru.png" alt="丸箱 さくらさくり">
+        </div>
+        <div class="product__body">
+          <h3 class="product__name">丸箱</h3>
+          <p class="product__catch">大切な人に、映えるギフト。</p>
+          <ul class="product__meta">
+            <li>5枚入り</li><li>ギフト包装対応</li><li>賞味期限 1年</li>
+          </ul>
+          <div class="product__foot">
+            <div class="product__price">¥3,000 <small>税込</small></div>
+            <a class="btn" href="https://yiemshop.com/collections/sakurasakuri" target="_blank" rel="noopener">見る</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal d3">
+        <div class="product__media">
+          <span class="product__rank">Product 03</span>
+          <img src="assets/img/single.png" alt="個包装単品 さくらさくり">
+        </div>
+        <div class="product__body">
+          <h3 class="product__name">個包装単品</h3>
+          <p class="product__catch">一人ひとりへ、あなたのことば。</p>
+          <ul class="product__meta">
+            <li>名入れ印字</li><li>大量注文</li><li>法人対応</li>
+          </ul>
+          <div class="product__foot">
+            <div class="product__price">¥8,500 <small>税込〜</small></div>
+            <a class="btn" href="https://yiemshop.com/collections/sakurasakuri" target="_blank" rel="noopener">見る</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ストーリー -->
+<section class="story">
+  <div class="wrap">
+    <div class="story__card reveal">
+      <p class="eyebrow">Our story</p>
+      <div class="story__count"><b>3.4</b>万人</div>
+      <h2 class="story__title">と、一緒に作りました。</h2>
+      <p class="story__quote">頑張る人へ、お世話になった人へ。エールや感謝の気持ちを、美味しいもので届けたい</p>
+      <p class="story__body">そんな声から生まれた、さくらさくり。岐阜の米粉と抹茶を合わせ、桜を象ったゴーフレットに焼き上げました。一枚一枚に「人生に満開の桜が咲きますように」という願いを込めて。</p>
+      <a class="btn btn--gold" href="https://yiemshop.com/collections/sakurasakuri" target="_blank" rel="noopener">YiEM SHOP を訪れる<span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- LINE バナー -->
+<section class="line-banner">
+  <div class="wrap">
+    <div class="line-banner__inner reveal">
+      <div class="line-banner__off">10<small>％OFF</small></div>
+      <p>LINE公式アカウントの友だち登録で、<br>初回に使えるクーポンをプレゼント。</p>
+      <a class="btn" href="https://yiemshop.com/collections/sakurasakuri" target="_blank" rel="noopener">クーポンを受け取る</a>
+    </div>
+  </div>
+</section>
+
+<!-- 最終 CTA -->
+<section class="final" id="cta">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Gift your gratitude</p>
+      <h2 class="final__title">あなたの感謝を、<br><span class="accent">桜の形</span>に。</h2>
+      <p class="final__sub">大切な人の人生に、満開の一枚を。<br>YiEM SHOP オンラインストアでお選びいただけます。</p>
+      <a class="btn" href="https://yiemshop.com/collections/sakurasakuri" target="_blank" rel="noopener">ギフトを探す<span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer class="site-foot">
+  <div class="brand">さくらさくり<small>SAKURA SAKURI</small></div>
+  <div class="site-foot__links">
+    <a href="#reasons">3つの理由</a>
+    <a href="#products">商品</a>
+    <a href="#story">物語</a>
+    <a href="https://yiemshop.com/collections/sakurasakuri" target="_blank" rel="noopener">オンラインストア</a>
+  </div>
+  <small>© 2026 YiEM SHOP. All Rights Reserved.</small>
+  <p class="note">本ページはデザイン提案用のリニューアル案（別パターン）です。</p>
+</footer>
+
+<!-- スクリプト -->
+<script type="module" src="js/scene.js"></script>
+<script>
+  // ヘッダーの背景切替
+  const head = document.getElementById("head");
+  const onScroll = () => head.classList.toggle("scrolled", window.scrollY > 40);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  // スクロールで要素をふわっと表示
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: 0.16 });
+  document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+</script>
+</body>
+</html>
