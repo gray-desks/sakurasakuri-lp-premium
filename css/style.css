@@ -156,9 +156,13 @@ body::after {
   box-shadow: 0 1px 0 rgba(190,155,69,.18);
 }
 .brand {
+  display: inline-flex; align-items: center; gap: .55rem;
   font-family: var(--display);
   font-size: 1.18rem; letter-spacing: .14em; color: var(--sakura-dark);
 }
+.brand__crest { filter: drop-shadow(0 2px 4px rgba(160,60,90,.25)); }
+.brand--center { flex-direction: column; gap: 0; }
+.foot-crest { margin: 0 auto .6rem; filter: drop-shadow(0 3px 8px rgba(160,60,90,.25)); }
 .brand small {
   display: block; font-family: var(--latin); font-style: italic;
   font-size: .62rem; letter-spacing: .3em; color: var(--gold); margin-top: -2px;
